@@ -42,13 +42,15 @@ public class Titan {
         titansalvador.curar(titanMandibula);
         titanMandibula.atacar(titanBestia);
         titanMandibula.atacar(titanBestia);
+        titanBestia.atacar(titanMandibula);
         titansalvador.curar(titanBestia);
 
         if (titanMandibula.vida > titanBestia.vida) {
-            System.out.println("El ganador fue el Titan Mandubula");
+            System.out.println("El ganador fue el Titan Mandibula");
         } else if (titanBestia.vida > titanMandibula.vida) {
             System.out.println("El ganador fue el Titan Bestia ");
         }
     }
 }
+
 
